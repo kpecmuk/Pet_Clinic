@@ -1,20 +1,25 @@
 /**
  * Класс питомца, с именем и видом
- * Created by Kpecmuk on 10.02.2017.
+ *
+ * @author Kpecmuk
+ * @since 10.02.17
  */
-public class Pet extends SimplePet {
+public class Pet extends Animal {
+    private String petName = "No Name";
+    private String owner = "_______";
 
     public Pet(String petName, String petType, String owner) {
-        super(petName,petType,owner);
+        super(petType);
+        this.petName = petName;
+        this.owner = owner;
     }
 
     public Pet(String petName, String petType) {
-        super(petName, petType, "_______");
+        super(petType);
+        this.petName = petType;
     }
 
     public void voice() {
         System.out.println("bark, meow");
     }
-
-
 }

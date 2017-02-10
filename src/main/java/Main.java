@@ -3,13 +3,14 @@
  *
  * @author kpecmuk
  * @version 1.0
+ * @since 10.02.17
  */
 public class Main {
 
     public static void main(String[] args) {
 
-        Pet newPet = new Pet("Barsik", "cat");
-        Pet newPet2 = new Pet("Batuto", "dog");
-        newPet.voice();
+        Client client = new Client("Boris", new Pet("Barsik","cat"));
+
+        client.getPet().voice();
     }
 }
