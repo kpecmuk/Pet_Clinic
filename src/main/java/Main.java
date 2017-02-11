@@ -1,3 +1,4 @@
+
 /**
  * Pet Clinic education program
  *
@@ -9,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Client client = new Client("Boris", new Pet("Barsik","cat"));
+        ClinicMenu clinicMenu = new ClinicMenu();
+        System.out.println("Action is: " + clinicMenu.askAction());
 
-        client.getPet().voice();
     }
 }
