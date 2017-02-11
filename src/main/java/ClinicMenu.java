@@ -4,7 +4,7 @@
  * @author kpecmuk
  * @since 11.02.17
  */
-public class ClinicMenu extends AbstrackMenu implements I_Menu {
+public class ClinicMenu extends AbstractMenu implements I_Menu {
     private int action;
 
     public void show() {
@@ -20,8 +20,9 @@ public class ClinicMenu extends AbstrackMenu implements I_Menu {
         System.out.print("ACTION: ");
     }
 
-    public int action(int command) {
-        switch (command) {
+    @Override
+    public int action(int action) {
+        switch (action) {
             case 1: {
                 this.action = 1;
                 break;
@@ -42,7 +43,7 @@ public class ClinicMenu extends AbstrackMenu implements I_Menu {
         return this.action;
     }
 
-    public int getAction() {
+    int getAction() {
         return this.action;
     }
 }

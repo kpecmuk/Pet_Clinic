@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author kpecmuk
  * @since 11.02.17
  */
-abstract class AbstrackMenu implements I_Menu {
+abstract class AbstractMenu implements I_Menu {
 
     public int askAction() {
         Scanner scanner = new Scanner(System.in);

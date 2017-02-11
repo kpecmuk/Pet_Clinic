@@ -17,10 +17,10 @@ public class Main {
             System.out.println("Action 1");
         }
         if (clinicMenu.getAction() == 2) {
-            System.out.println("Action 1");
+            System.out.println("Action 2");
         }
         if (clinicMenu.getAction() == 3) {
-            System.out.println("Action 1");
+            System.out.println("Action 3");
         }
         if (clinicMenu.getAction() == 5) {
             System.out.println("Action 5 - EXIT");

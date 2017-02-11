@@ -2,8 +2,8 @@
  * @author kpecmuk
  * @since 11.02.2017
  */
-public class ClinicClientAdd implements I_Menu {
-    @Override
+public class ClinicClientAdd extends AbstractMenu implements I_Menu {
+
     public void show() {
         System.out.println("----------------");
         System.out.println("New Client Menu:");
@@ -18,7 +18,7 @@ public class ClinicClientAdd implements I_Menu {
     }
 
     @Override
-    public int askAction() {
+    protected int action(int command) {
         return 0;
     }
 }
