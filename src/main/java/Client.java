@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Профиль клиента
  * У клиента есть имя и питомец
@@ -8,18 +10,18 @@
 public class Client {
 
     private String clientName;
-    private Pet pet;
+    private List pet;
 
     public Client(String name, Pet pet) {
         this.clientName = name;
-        this.pet = pet;
+        this.pet.add(pet);
     }
 
     public String getClientName() {
         return clientName;
     }
 
-    public Pet getPet() {
+    public List getPet() {
         return this.pet;
     }
 }
