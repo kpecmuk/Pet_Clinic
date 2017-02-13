@@ -1,5 +1,7 @@
 package clinic;
 
+import client.ClientOptions;
+
 import java.util.List;
 
 /**
@@ -9,9 +11,11 @@ import java.util.List;
 public class Clinic {
     private List clients;
     private ClinicMenu clinicMenu;
+    private ClientOptions clientOptions;
 
     public Clinic() {
         this.clinicMenu = new ClinicMenu();
+        this.clientOptions = new ClientOptions();
     }
 
     public void startWorking() {
@@ -19,7 +23,7 @@ public class Clinic {
         clinicMenu.askAction();
 
         if (clinicMenu.getAction() == 1) {
-            System.out.println("Action 1");
+            clientOptions.askAction();
         }
         if (clinicMenu.getAction() == 2) {
             System.out.println("Action 2");

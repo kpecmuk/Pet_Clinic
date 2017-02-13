@@ -13,10 +13,10 @@ public class ClinicMenu extends AbstractMenu {
 
     public void show() {
         System.out.println("--------------------");
-        System.out.println("  pet.Pet clinic.Clinic Menu   ");
+        System.out.println("  Clinic Menu       ");
         System.out.println("--------------------");
-        System.out.println("1.client.Client options    ");
-        System.out.println("2.pet.Pet options       ");
+        System.out.println("1.Client options    ");
+        System.out.println("2.Pet options       ");
         System.out.println("3.Update information");
         System.out.println("--------------------");
         System.out.println("5.Exit program      ");
@@ -25,7 +25,7 @@ public class ClinicMenu extends AbstractMenu {
     }
 
     @Override
-    public int action(int action) {
+    public int action(int command) {
         switch (action) {
             case 1: {
                 this.action = 1;
@@ -47,11 +47,7 @@ public class ClinicMenu extends AbstractMenu {
         return this.action;
     }
 
-    void resetAction() {
-        this.action = 0;
-    }
-
-    int getAction() {
-        return this.action;
+    public int getAction() {
+        return action;
     }
 }

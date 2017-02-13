@@ -13,6 +13,5 @@ public class Main {
 
         Clinic clinic = new Clinic();
         clinic.startWorking();
-
     }
 }

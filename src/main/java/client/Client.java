@@ -15,7 +15,6 @@ public class Client {
     private List pet;
 
     public Client(String name) {
-        this.clientName = name;
     }
 
     public String getClientName() {

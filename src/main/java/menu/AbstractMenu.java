@@ -25,5 +25,5 @@ public abstract class AbstractMenu implements I_Menu {
         return action(command);
     }
 
-    protected abstract int action(int command);
+    public abstract int action(int command);
 }
