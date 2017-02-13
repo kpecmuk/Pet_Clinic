@@ -1,7 +1,7 @@
 import clinic.Clinic;
 
 /**
- * Pet clinic.Clinic education program
+ * pet.Pet clinic.Clinic education program
  *
  * @author kpecmuk
  * @version 1.0

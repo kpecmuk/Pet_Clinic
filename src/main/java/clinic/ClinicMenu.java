@@ -13,10 +13,10 @@ public class ClinicMenu extends AbstractMenu {
 
     public void show() {
         System.out.println("--------------------");
-        System.out.println("  Pet clinic.Clinic Menu   ");
+        System.out.println("  pet.Pet clinic.Clinic Menu   ");
         System.out.println("--------------------");
         System.out.println("1.client.Client options    ");
-        System.out.println("2.Pet options       ");
+        System.out.println("2.pet.Pet options       ");
         System.out.println("3.Update information");
         System.out.println("--------------------");
         System.out.println("5.Exit program      ");
