@@ -1,3 +1,5 @@
+package client;
+
 import java.util.List;
 
 /**
@@ -12,13 +14,12 @@ public class Client {
     private String clientName;
     private List pet;
 
-    public Client(String name, Pet pet) {
+    public Client(String name) {
         this.clientName = name;
-        this.pet.add(pet);
     }
 
     public String getClientName() {
-        return clientName;
+        return this.clientName;
     }
 
     public List getPet() {

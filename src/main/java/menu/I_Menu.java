@@ -1,3 +1,5 @@
+package menu;
+
 /**
  * @author kpecmuk
  * @since 10.02.2017

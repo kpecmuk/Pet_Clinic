@@ -1,6 +1,7 @@
+import clinic.Clinic;
 
 /**
- * Pet Clinic education program
+ * Pet clinic.Clinic education program
  *
  * @author kpecmuk
  * @version 1.0
@@ -10,20 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ClinicMenu clinicMenu = new ClinicMenu();
+        Clinic clinic = new Clinic();
+        clinic.startWorking();
 
-        clinicMenu.askAction();
-        if (clinicMenu.getAction() == 1) {
-            System.out.println("Action 1");
-        }
-        if (clinicMenu.getAction() == 2) {
-            System.out.println("Action 2");
-        }
-        if (clinicMenu.getAction() == 3) {
-            System.out.println("Action 3");
-        }
-        if (clinicMenu.getAction() == 5) {
-            System.out.println("Action 5 - EXIT");
-        }
     }
 }

@@ -1,3 +1,5 @@
+package menu;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -5,7 +7,7 @@ import java.util.Scanner;
  * @author kpecmuk
  * @since 11.02.17
  */
-abstract class AbstractMenu implements I_Menu {
+public abstract class AbstractMenu implements I_Menu {
 
     public int askAction() {
         Scanner scanner = new Scanner(System.in);

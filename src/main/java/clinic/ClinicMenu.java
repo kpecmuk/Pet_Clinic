@@ -1,22 +1,26 @@
+package clinic;
+
+import menu.AbstractMenu;
+
 /**
  * Main menu
  *
  * @author kpecmuk
  * @since 11.02.17
  */
-public class ClinicMenu extends AbstractMenu implements I_Menu {
+public class ClinicMenu extends AbstractMenu {
     private int action;
 
     public void show() {
-        System.out.println("----------------");
-        System.out.println("Pet Clinic Menu:");
-        System.out.println("----------------");
-        System.out.println("1. Add Client");
-        System.out.println("2. Remove Client");
-        System.out.println("3. Update Client");
-        System.out.println("----------------");
-        System.out.println("5. Exit program");
-        System.out.println("----------------");
+        System.out.println("--------------------");
+        System.out.println("  Pet clinic.Clinic Menu   ");
+        System.out.println("--------------------");
+        System.out.println("1.client.Client options    ");
+        System.out.println("2.Pet options       ");
+        System.out.println("3.Update information");
+        System.out.println("--------------------");
+        System.out.println("5.Exit program      ");
+        System.out.println("--------------------");
         System.out.print("ACTION: ");
     }
 
@@ -41,6 +45,10 @@ public class ClinicMenu extends AbstractMenu implements I_Menu {
             }
         }
         return this.action;
+    }
+
+    void resetAction() {
+        this.action = 0;
     }
 
     int getAction() {
