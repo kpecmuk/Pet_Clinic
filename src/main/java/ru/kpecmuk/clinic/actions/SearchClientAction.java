@@ -26,7 +26,7 @@ public class SearchClientAction implements Action {
      */
     @Override
     public String intro() {
-        return String.format("%s - search client", this.key());
+        return (this.key() + " - search client");
     }
 
     /**

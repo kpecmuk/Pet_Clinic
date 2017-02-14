@@ -27,7 +27,7 @@ public class ShowAction implements Action {
      */
     @Override
     public String intro() {
-        return String.format("%s - show clients", this.key());
+        return (this.key() + " - show client");
     }
 
     /**

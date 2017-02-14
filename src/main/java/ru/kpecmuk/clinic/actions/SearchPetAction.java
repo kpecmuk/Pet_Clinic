@@ -26,7 +26,7 @@ public class SearchPetAction implements Action {
      */
     @Override
     public String intro() {
-        return String.format("%s - search pet", this.key());
+        return (this.key() + " - search pet");
     }
 
     /**

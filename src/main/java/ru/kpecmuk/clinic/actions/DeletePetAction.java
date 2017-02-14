@@ -17,7 +17,7 @@ public class DeletePetAction implements Action {
 
     @Override
     public String intro() {
-        return String.format("%s - delete pet", this.key());
+        return (this.key() + " - delete pet");
     }
 
     @Override

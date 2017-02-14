@@ -6,8 +6,6 @@ import ru.kpecmuk.clinic.Pet;
 import ru.kpecmuk.clinic.tools.Validator;
 
 /**
- * �������������� �������.
- *
  * @author parsentev
  * @since 11.08.2015
  */
@@ -32,7 +30,7 @@ public class UpdatePetAction implements Action {
      */
     @Override
     public String intro() {
-        return String.format("%s - update pet", this.key());
+        return (this.key() + " - update pet");
     }
 
     /**

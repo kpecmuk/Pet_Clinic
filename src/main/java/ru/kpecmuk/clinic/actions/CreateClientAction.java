@@ -20,7 +20,7 @@ public class CreateClientAction implements Action {
 
     @Override
     public int key() {
-        return 0;
+        return 1;
     }
 
 }

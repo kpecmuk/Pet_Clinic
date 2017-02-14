@@ -32,7 +32,7 @@ public class CreatePetAction implements Action {
      */
     @Override
     public String intro() {
-        return String.format("%s - create pet", this.key());
+        return (key() + " - create pet");
     }
 
     /**

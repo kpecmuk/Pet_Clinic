@@ -29,7 +29,7 @@ public class UpdateClientAction implements Action {
      */
     @Override
     public String intro() {
-        return String.format("%s - update client", this.key());
+        return (this.key() + " - update client");
     }
 
     /**

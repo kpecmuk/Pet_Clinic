@@ -10,25 +10,9 @@ import ru.kpecmuk.clinic.tools.Validator;
  */
 public interface Action {
 
-    /**
-     * Выполнить действие.
-     *
-     * @param clinic    Клиника.
-     * @param validator Валидатор ввода.
-     */
     void execute(final IClinic clinic, final Validator validator);
 
-    /**
-     * Описание действия.
-     *
-     * @return Описание.
-     */
     String intro();
 
-    /**
-     * Ключ.
-     *
-     * @return ключ.
-     */
     int key();
 }

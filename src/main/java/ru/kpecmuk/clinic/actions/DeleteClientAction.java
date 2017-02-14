@@ -14,7 +14,7 @@ public class DeleteClientAction implements Action {
 
     @Override
     public String intro() {
-        return String.format("%s - delete client", this.key());
+        return (this.key() + " - delete client");
     }
 
     @Override

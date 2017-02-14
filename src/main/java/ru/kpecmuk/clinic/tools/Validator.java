@@ -26,21 +26,17 @@ public class Validator implements Closeable {
     }
 
     public int getInt(String message) {
-        Scanner scanner = new Scanner(System.in);
-
-        int result = 0;
-        boolean correct = false;
+        boolean invalid = false;
         do {
             try {
-                result = scanner.nextInt();
-            } catch (Exception e) {
-                System.out.println("Number plz !");
-                scanner.nextInt();
+                System.out.print(message);
+                return Integer.valueOf(io.read());
+            } catch (NumberFormatException n) {
+                invalid = true;
+                System.out.println("Error read of int, Please enter new one.");
             }
-
-        } while (!correct);
-
-        return result;
+        } while (invalid);
+        throw new UnsupportedOperationException();
     }
 
     public double getDouble(String message) {
@@ -68,9 +64,7 @@ public class Validator implements Closeable {
                 System.out.println("String plz !");
                 scanner.next();
             }
-
         } while (!correct);
-
         return result;
     }
 
@@ -95,6 +89,5 @@ public class Validator implements Closeable {
 
     @Override
     public void close() throws IOException {
-
     }
 }
