@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Scanner;
 
 /**
  * @since 14.02.2017
@@ -26,7 +25,7 @@ public class Validator implements Closeable {
     }
 
     public int getInt(String message) {
-        boolean invalid = false;
+        boolean invalid;
         do {
             try {
                 System.out.print(message);
@@ -54,22 +53,12 @@ public class Validator implements Closeable {
     }
 
     public String getString(String message) {
-        Scanner scanner = new Scanner(System.in);
-        String result = "";
-        boolean correct = false;
-        do {
-            try {
-                result = scanner.next();
-            } catch (Exception e) {
-                System.out.println("String plz !");
-                scanner.next();
-            }
-        } while (!correct);
-        return result;
+        System.out.print(message);
+        return this.io.read();
     }
 
     public int getIntFromList(final String msg, final Collection<Integer> keys) {
-        boolean invalid = false;
+        boolean invalid;
         do {
             try {
                 System.out.print(msg);
