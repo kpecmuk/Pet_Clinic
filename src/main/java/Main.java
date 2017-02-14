@@ -1,7 +1,9 @@
-import clinic.Clinic;
+import Actions.CreateClientAction;
+import Actions.RemoveClientAction;
+import Actions.ViewClientAction;
 
 /**
- * pet.Pet clinic.Clinic education program
+ * Pet Clinic education program
  *
  * @author kpecmuk
  * @version 1.0
@@ -11,7 +13,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Clinic clinic = new Clinic();
-        clinic.startWorking();
+        Clinic ui = new Clinic();
+
+        ui.addAction(new ViewClientAction());
+        ui.addAction(new CreateClientAction());
+        ui.addAction(new RemoveClientAction());
+
+        ui.info();
     }
 }
