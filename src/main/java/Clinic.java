@@ -9,8 +9,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * @since 10.02.2017
  */
 public class Clinic {
-    private List clients;
     private final Map<Integer, Action> actions = new ConcurrentHashMap();
+    private List clients;
 
     public Clinic() {
 
@@ -18,6 +18,11 @@ public class Clinic {
 
     public void addAction(Action action) {
         this.actions.put(action.actionID(), action);
+    }
+
+    protected void show() {
+        info();
+
     }
 
     protected void info() {

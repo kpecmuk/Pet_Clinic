@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class Validator {
 
-    public int getInt() {
+    public int getInt(Clinic ui) {
         Scanner scanner = new Scanner(System.in);
 
         int result = 0;
@@ -17,6 +17,7 @@ public class Validator {
             } catch (Exception e) {
                 System.out.println("Number plz !");
                 scanner.nextInt();
+                ui.info();
             }
 
         } while (!correct);

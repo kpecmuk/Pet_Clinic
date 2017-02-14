@@ -7,7 +7,7 @@ package Actions;
 public class CreateClientAction implements Action {
     @Override
     public String info() {
-        return (actionID() + " - CreateClientAction");
+        return (actionID() + " - New client");
     }
 
     @Override

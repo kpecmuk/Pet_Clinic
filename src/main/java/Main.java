@@ -19,6 +19,6 @@ public class Main {
         ui.addAction(new CreateClientAction());
         ui.addAction(new RemoveClientAction());
 
-        ui.info();
+        ui.show();
     }
 }
